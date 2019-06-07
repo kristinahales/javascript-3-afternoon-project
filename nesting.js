@@ -51,6 +51,16 @@ var employees = [
 */
 
 //Code Here
+function employeeUpdater() {
+  for(let i = 0; i < employees.length; i++) {
+    if(employees[i].firstName === 'Theo') {
+      delete employees[i];
+    } else if (employees[i].firstName === 'Lorie') {
+      employees[i].department = 'HR';
+    }
+  }
+  return employees;
+}
 
 
 
@@ -69,6 +79,15 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 */
 
 //Code Here
+function removeDuplicates() {
+  let newArray = [];
+  for (var i = 0; i < workplaceAccidents.length; i++) {
+    if (newArray.indexOf(workplaceAccidents[i]) === -1) {
+      newArray.push(workplaceAccidents[i]);
+    }
+  }
+  return newArray;
+}
 
 
 
